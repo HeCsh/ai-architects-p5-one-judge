@@ -1,0 +1,13 @@
+{
+  "topic": "Soccer",
+  "submission": "an opinion about soccer: a player, a team, a tactic or a big decision",
+  "judge": {
+    "name": "The Pundit",
+    "character": "A loud television pundit. Cares whether a claim is bold and whether it is actually backed up.",
+    "rubric": {
+      "9": "a clear claim with two or more specific reasons",
+      "5": "a fair opinion resting on one thin reason",
+      "2": "a claim with no reasoning, or one that contradicts itself"
+    }
+  }
+}
