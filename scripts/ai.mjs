@@ -33,6 +33,13 @@ export async function askAI(prompt) {
     // Thirty seconds is plenty for a short answer.
     signal: AbortSignal.timeout(30000),
   });
+  // A free key only allows a few questions a minute, and every press of the
+  // button asks each judge once. Too many presses close together get this
+  // error. It is not broken, it just needs a short rest.
+  if (res.status === 429) {
+    console.error((await res.text()).slice(0, 1500)); // full detail for whoever runs the server
+    throw new Error('The AI is getting too many questions right now. Wait a minute, then try again.');
+  }
   if (!res.ok) {
     throw new Error(`The AI answered with error ${res.status}: ${(await res.text()).slice(0, 200)}`);
   }
