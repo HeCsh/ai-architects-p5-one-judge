@@ -1,5 +1,7 @@
 # AI Architects · Project 5: One judge (checkpoint)
 
+**See it working:** [https://hecsh.github.io/ai-architects-p5-one-judge/](https://hecsh.github.io/ai-architects-p5-one-judge/). This example site replays real answers recorded from the judges, so you can try the examples without a key. It lives in the `docs` folder; you do not need to change it.
+
 Finished state of Project 5. One thing is working here:
 
 - **A judge.** Type a soccer opinion into the box and press **Ask the judge**. The Pundit scores it out of ten and says why in two sentences.

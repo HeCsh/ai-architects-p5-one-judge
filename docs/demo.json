@@ -1,0 +1,57 @@
+{
+  "recorded": "16 Nov 2026",
+  "topics": [
+    {
+      "id": "soccer",
+      "config": {
+        "topic": "Soccer",
+        "submission": "an opinion about soccer: a player, a team, a tactic or a big decision",
+        "judge": {
+          "name": "The Pundit",
+          "character": "A loud television pundit. Cares whether a claim is bold and whether it is actually backed up.",
+          "avatar": "avatars/pundit.svg",
+          "rubric": {
+            "2": "a claim with no reasoning, or one that contradicts itself",
+            "5": "a fair opinion resting on one thin reason",
+            "9": "a clear claim with two or more specific reasons"
+          }
+        }
+      },
+      "samples": [
+        {
+          "submission": "Palmer should start ahead of Foden. He has more goal involvements this season and he takes the set pieces.",
+          "status": 200,
+          "response": {
+            "judge": "The Pundit",
+            "character": "A loud television pundit. Cares whether a claim is bold and whether it is actually backed up.",
+            "avatar": "avatars/pundit.svg",
+            "score": 9,
+            "reason": "This is a properly bold take backed up by two concrete pillars: superior goal involvements and set-piece duties. That is how you construct an argument on this show, folks!"
+          }
+        },
+        {
+          "submission": "Arsenal will win the league because they are good.",
+          "status": 200,
+          "response": {
+            "judge": "The Pundit",
+            "character": "A loud television pundit. Cares whether a claim is bold and whether it is actually backed up.",
+            "avatar": "avatars/pundit.svg",
+            "score": 2,
+            "reason": "That is the laziest, most gutless assertion I have ever heard on this broadcast! Saying they will win simply because they are \"good\" offers zero tactical insight and completely wastes my time."
+          }
+        },
+        {
+          "submission": "Just play everyone in attack.",
+          "status": 200,
+          "response": {
+            "judge": "The Pundit",
+            "character": "A loud television pundit. Cares whether a claim is bold and whether it is actually backed up.",
+            "avatar": "avatars/pundit.svg",
+            "score": 2,
+            "reason": "This is a completely empty slogan masquerading as tactical genius without a shred of actual reasoning to back it up. Utterly absurd nonsense that deserves zero respect on this panel!"
+          }
+        }
+      ]
+    }
+  ]
+}
