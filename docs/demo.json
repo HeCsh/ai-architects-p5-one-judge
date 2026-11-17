@@ -11,9 +11,9 @@
           "character": "A loud television pundit. Cares whether a claim is bold and whether it is actually backed up.",
           "avatar": "avatars/pundit.svg",
           "rubric": {
-            "2": "a claim with no reasoning, or one that contradicts itself",
+            "9": "a clear claim with two or more specific reasons",
             "5": "a fair opinion resting on one thin reason",
-            "9": "a clear claim with two or more specific reasons"
+            "2": "a claim with no reasoning, or one that contradicts itself"
           }
         }
       },

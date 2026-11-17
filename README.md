@@ -20,7 +20,7 @@ This time somebody types and wants an answer straight away. So something has to 
 
 | File | What it does |
 | --- | --- |
-| `index.html` | The web page. A box, a button, and a card for the judge's score. |
+| `index.html` | The web page. A box, a button, and a stage where the judge talks and holds up a score. The browser reads the answer out loud; the **Voices** button turns that off. |
 | `config.json` | The settings you change: the topic, what gets sent in, and the judge with their character and rubric. |
 | `avatars/` | The Pundit's picture. |
 | `scripts/server.mjs` | The server. Hands out the page, and passes each submission to the judge. |
@@ -73,7 +73,7 @@ Open `config.json`. The judge lives there, not in the code.
 
 The **rubric** matters most. It tells the judge what a 9, a 5 and a 2 look like. Without it, an AI gives almost everything a 7, because 7 sounds polite. Change a line, save the file, and press the button again. You do not need to restart the server.
 
-The **avatar** is the picture on the judge's card. It lives in the `avatars` folder. It is a drawing, not a photo of a real person, because this page is meant to go on the internet.
+The **avatar** is the picture on the judge's card. It lives in the `avatars` folder. It is a drawing, not a photo of a real person, because this page is meant to go on the internet. It has named parts (`av-head`, `av-eyes`, `av-mouth-open` and so on) so the page can make it blink and talk.
 
 ## Try these
 
