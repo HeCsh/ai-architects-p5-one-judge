@@ -87,6 +87,7 @@
     <article id="result" class="hidden bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm">
       <div class="flex items-start justify-between gap-6">
         <div>
+          <img id="judge-avatar" alt="" class="hidden w-16 h-16 mb-3 rounded-full bg-slate-100">
           <h2 id="judge-name" class="font-display text-xl font-bold text-slate-900"></h2>
           <p id="judge-character" class="mt-1 text-xs text-slate-500 leading-relaxed"></p>
         </div>
@@ -172,6 +173,10 @@
 
         // textContent, not innerHTML: whatever the AI writes is shown as
         // words, and can never be run as code on the page.
+        // The judge's picture, from "avatar" in config.json.
+        const avatar = document.getElementById('judge-avatar');
+        avatar.classList.toggle('hidden', !data.avatar);
+        if (data.avatar) { avatar.src = data.avatar; avatar.alt = `Picture of ${data.judge}`; }
         document.getElementById('judge-name').textContent = data.judge;
         document.getElementById('judge-character').textContent = data.character;
         document.getElementById('score').textContent = data.score;

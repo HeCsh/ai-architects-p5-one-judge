@@ -4,6 +4,7 @@
   "judge": {
     "name": "The Pundit",
     "character": "A loud television pundit. Cares whether a claim is bold and whether it is actually backed up.",
+    "avatar": "avatars/pundit.svg",
     "rubric": {
       "9": "a clear claim with two or more specific reasons",
       "5": "a fair opinion resting on one thin reason",

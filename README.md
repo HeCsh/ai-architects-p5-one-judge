@@ -20,6 +20,7 @@ This time somebody types and wants an answer straight away. So something has to 
 | --- | --- |
 | `index.html` | The web page. A box, a button, and a card for the judge's score. |
 | `config.json` | The settings you change: the topic, what gets sent in, and the judge with their character and rubric. |
+| `avatars/` | The Pundit's picture. |
 | `scripts/server.mjs` | The server. Hands out the page, and passes each submission to the judge. |
 | `scripts/judge.mjs` | The judge. Turns the judge in `config.json` into instructions for the AI, and reads the score out of the answer. |
 | `scripts/ai.mjs` | The only file that talks to the AI. If the AI or the hosting ever changes, this is the only file that changes. |
@@ -59,6 +60,7 @@ Open `config.json`. The judge lives there, not in the code.
 "judge": {
   "name": "The Pundit",
   "character": "A loud television pundit. Cares whether a claim is bold and whether it is actually backed up.",
+  "avatar": "avatars/pundit.svg",
   "rubric": {
     "9": "a clear claim with two or more specific reasons",
     "5": "a fair opinion resting on one thin reason",
@@ -68,6 +70,8 @@ Open `config.json`. The judge lives there, not in the code.
 ```
 
 The **rubric** matters most. It tells the judge what a 9, a 5 and a 2 look like. Without it, an AI gives almost everything a 7, because 7 sounds polite. Change a line, save the file, and press the button again. You do not need to restart the server.
+
+The **avatar** is the picture on the judge's card. It lives in the `avatars` folder. It is a drawing, not a photo of a real person, because this page is meant to go on the internet.
 
 ## Try these
 
